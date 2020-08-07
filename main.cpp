@@ -119,7 +119,7 @@ int main(int argc, char *argv[]) {
     output.push_back('\x0A');
 
     //Finally send the content of output vector to the printer
-    for (int i = 0; i < output.size(); i++) {
+    for (long unsigned int i = 0; i < output.size(); i++) {
         dmprinter << static_cast<char>(output.at(i));
     }
     return 0;
